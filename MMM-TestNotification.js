@@ -13,7 +13,10 @@ Module.register("MMM-TestNotifications",{
         this.info=0;
     },
     
-    getDom:function(){},
+    getDom:function(){
+        var wrapper=document.createElement("div");
+        return wrapper;
+    },
     
     
     
