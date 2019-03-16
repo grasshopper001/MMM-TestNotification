@@ -50,7 +50,7 @@ Module.register("MMM-TestNotifications",{
     },
     shutOtherModule:function(){
         MM.getModules().exceptModule(this).enumerate(function(module){
-            if(module.name!=="MMM-ImagesPhotos"){
+            if(module.name!=="MMM-aliImage"){
                 module.hide();
             }
             else{
@@ -60,7 +60,7 @@ Module.register("MMM-TestNotifications",{
     }, 
     backToIndex:function(){
         MM.getModules().exceptModule(this).enumerate(function(module){
-            if(module.name!=="MMM-ImagesPhotos"&&module.name!=="MMM-MQTT"){
+            if(module.name!=="MMM-aliImage"&&module.name!=="MMM-MQTT"){
                 module.show();
             }
             else{
